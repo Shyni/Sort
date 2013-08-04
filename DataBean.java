@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication1;
+package sort;
 
 /**
  *
@@ -36,5 +36,10 @@ class DataBean {
     public void setId(String id){
         this.id=id;
     }
+    @Override
+    public String toString() {
+	   StringBuilder builder = new StringBuilder();
+		return builder.append("level : ").append(level).append(" name : ").append(name).append(" id : ").append(id).toString();
+	}
     
 }
